@@ -1,13 +1,32 @@
 prg 1 - face
-import java.awt.*; import java.applet.*;
+
+import java.awt.*; 
+import java.applet.*;
 public class Face extends Applet
 {
 public void paint(Graphics g)
 {
-g.setColor(Color.red); g.fillOval(40,40,120,150);//head g.setColor(Color.black); g.drawOval(57,75,30,20);//left eye g.drawOval(110,73,30,20);//right eye g.fillOval(68,81,10,10);//left pupil g.fillOval(121,81,10,10);//right pupil g.drawOval(85,100,30,30);//nose g.fillArc(60,125,80,40,180,180);//mouth g.drawOval(25,92,15,30);//left ear g.drawOval(160,92,15,30);//right ear
+g.setColor(Color.red); g.fillOval(40,40,120,150);
+//head 
+g.setColor(Color.black); 
+g.drawOval(57,75,30,20);
+//left eye 
+g.drawOval(110,73,30,20);
+//right eye g.fillOval(68,81,10,10);
+//left pupil g.fillOval(121,81,10,10);
+//right pupil 
+g.drawOval(85,100,30,30);
+//nose 
+g.fillArc(60,125,80,40,180,180);
+//mouth 
+g.drawOval(25,92,15,30);
+//left ear 
+g.drawOval(160,92,15,30);//right ear
 }
 }
 
+
+--------------------------------html code--------------------------------
 Face.html
 
 <html>
