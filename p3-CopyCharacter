@@ -1,9 +1,9 @@
 import java.io.*; 
-class CopyCharacters
+class Copy
 {
 public static void main(String args[])
 {
- File infile=new File("input.txt");
+File infile=new File("input.txt"); 
 File outfile=new File("output.txt"); 
 FileReader ins=null;
 FileWriter outs=null; 
@@ -11,10 +11,10 @@ try
 {
 ins=new FileReader(infile); 
 outs=new FileWriter(outfile); 
-int ch; 
-while((ch=ins.read())!=-1)
+int ch;
+while(ch=ins.read()!=-1)
 {
-outs.write(ch);
+outs.Write(ch);
 }
 }
 catch(IOException e)
@@ -24,12 +24,22 @@ System.exit(-1);
 }
 finally
 {
-try
+ try
 {
-ins.close();
+
+}
+ ins.close();
 outs.close();
-}
-catch(IOException e){}
-}
+ catch(IOException e){}
 }
 }
+}
+
+-------------------------
+cat>input.txt
+texthere
+javac CopyCharacter.java
+java CopyCharacter
+cat output.txt
+----
+cat input.txt
