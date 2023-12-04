@@ -103,7 +103,7 @@ l4.setText("invalid number");
 }}}
 
 
-
+------------------------
  
 HTML Code :
 
@@ -118,3 +118,7 @@ HTML Code :
 <applet code="Calculator.class" height=600 width=600></applet>
 </body>
 </html>
+
+--------------------------------------------
+javac Calculator.java
+appletviewer Calc.html
