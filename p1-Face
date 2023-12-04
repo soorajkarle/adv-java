@@ -32,4 +32,10 @@ Face.html
 </html>
 
 
- 
+-------------------------------- 
+javac Face.java
+appletviewer Face.html
+
+
+
+
